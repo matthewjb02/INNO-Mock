@@ -1,6 +1,7 @@
 import React from "react";
 import {createRoute} from "@tanstack/react-router";
 import {rootRoute} from "./root.jsx";
+import App from "../components/App.jsx";
 
 
 
@@ -10,7 +11,7 @@ export const homePageRoute = createRoute({
     component: function Index() {
         return (
             <>
-                <p> erurb</p>
+                <App></App>
             </>
         );
     },
