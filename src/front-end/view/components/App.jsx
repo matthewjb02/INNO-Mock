@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import AppController from "../../controller/AppController.js";
+import "../styles/App.css";
 
 function App() {
     const [agents, setAgents] = useState([]);
@@ -12,7 +13,7 @@ function App() {
     return (
         <div>
             <h1>Agent-Based Model</h1>
-            <svg width="500" height="500" style={{ border: "1px solid black" }}>
+            <svg width="500" height="500" className="canvas">
                 {agents.map((agent) => (
                     <circle key={agent.id} cx={agent.x} cy={agent.y} r="5" fill="blue" />
                 ))}

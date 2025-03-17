@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from ABM import Simulation
-
+from ..application.Simulation import Simulation
 app = Flask(__name__)
 CORS(app)  # Sta cross-origin requests toe voor React
 
