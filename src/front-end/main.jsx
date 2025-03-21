@@ -15,7 +15,7 @@ const router = createRouter({
     routeTree,
 });
 
-// Render the application
+// Render the service
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
